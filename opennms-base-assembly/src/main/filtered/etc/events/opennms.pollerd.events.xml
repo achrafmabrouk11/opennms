@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<events>
+
+    <event>
+        <uei>uei.opennms.org/internal/poller/outageCreated</uei>
+        <event-label>OpenNMS-defined node event: outageCreated</event-label>
+        <descr>
+            &lt;p&gt;A %service% outage was created on interface
+            %interface%.&lt;/p&gt;
+        </descr>
+        <logmsg dest='donotpersist'>
+            %service% outage identified on interface %interface% with reason code: %parm[eventReason]%.
+        </logmsg>
+        <severity>Normal</severity>
+    </event>
+    <event>
+        <uei>uei.opennms.org/internal/poller/outageResolved</uei>
+        <event-label>OpenNMS-defined node event: outageResolved</event-label>
+        <descr>
+            &lt;p&gt;The %service% service outage on interface %interface%
+            has been restored.&lt;/p&gt;
+        </descr>
+        <logmsg dest='donotpersist'>
+            The %service% outage on interface %interface% has been
+            resolved.
+        </logmsg>
+        <severity>Normal</severity>
+    </event>
+    <event>
+        <uei>uei.opennms.org/internal/poller/suspendPollingService</uei>
+        <event-label>OpenNMS-defined poller event: suspendPollingService</event-label>
+        <descr>
+            &lt;p&gt;A forced rescan has identified the %service% service
+            on interface %interface% as no longer part of any poller package,
+            or the service has been unmanaged.
+            &lt;/p&gt; Polling will be discontinued.&lt;/p&gt;
+        </descr>
+        <logmsg dest="logndisplay">
+            Polling will be discontinued for %service% service on interface
+            %interface%.
+        </logmsg>
+        <severity>Normal</severity>
+    </event>
+    <event>
+        <uei>uei.opennms.org/internal/poller/resumePollingService</uei>
+        <event-label>OpenNMS-defined poller event: resumePollingService</event-label>
+        <descr>
+            &lt;p&gt;A forced rescan has identified the %service% service
+            on interface %interface% as covered by a poller package, and
+            managed.
+            &lt;/p&gt; Polling will begin in accordance with the package and
+            any applicable outage calendar.&lt;/p&gt;
+        </descr>
+        <logmsg dest="logndisplay">
+            Polling will begin/resume for %service% service on interface
+            %interface%.
+        </logmsg>
+        <severity>Normal</severity>
+    </event>
+</events>
