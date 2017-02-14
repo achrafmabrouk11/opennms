@@ -22,19 +22,17 @@
   <event-file>events/opennms.default.threshold.events.xml</event-file>
   <event-file>events/opennms.discovery.events.xml</event-file>
   <event-file>events/opennms.hyperic.events.xml</event-file>
-  <event-file>events/opennms.importer.events.xml</event-file>
   <event-file>events/opennms.internal.events.xml</event-file>
   <event-file>events/opennms.linkd.events.xml</event-file>
   <event-file>events/opennms.mib.events.xml</event-file>
-  <event-file>events/opennms.node.events.xml</event-file>
   <event-file>events/opennms.pollerd.events.xml</event-file>
   <event-file>events/opennms.provisioning.events.xml</event-file>
+  <event-file>events/opennms.minion.events.xml</event-file>
   <event-file>events/opennms.remote.poller.events.xml</event-file>
   <event-file>events/opennms.reportd.events.xml</event-file>
   <event-file>events/opennms.syslogd.events.xml</event-file>
   <event-file>events/opennms.ticketd.events.xml</event-file>
   <event-file>events/opennms.tl1d.events.xml</event-file>
-  <event-file>events/opennms.topology-status.events.xml</event-file>
 
   <event-file>events/Rancid.events.xml</event-file>
   <event-file>events/3Com.events.xml</event-file>
